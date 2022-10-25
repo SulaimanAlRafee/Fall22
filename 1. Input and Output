@@ -1,0 +1,24 @@
+# number1 = 16 # this is a number
+# number2 = '17' #this is a string
+
+# we are adding two strings together
+number1 = '17'
+number2 = '19'
+print ("Adding Strings")
+print(number1+number2)
+print()
+
+# we are adding two numbers together
+number1 = 7
+number2 = 8
+print ("Adding Numbers")
+print(number1+number2)
+print()
+
+my_favorite_color = 'bright blue'
+print('My favorite color is:',my_favorite_color)
+print()
+
+# this is my first program
+print('Hello World')
+print("My name is Sulaiman")
