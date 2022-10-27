@@ -1,0 +1,33 @@
+#find out the age of a person in one line
+print("You are",2022-int(input("What year you were born:")),"Years old")
+
+#find out the age of a person
+# current_year = 2022
+# year_of_birth = int(input("What year you were born in: "))
+# print("You are ",current_year-year_of_birth, " Years old")
+
+# print("This program will allow you to find the area of a rectangle")
+# print("===============================================================")
+# length = input("What is the length of the rectangle:")
+# width = input("What is the width of the rectangle:")
+# area = int(width) * int(length)
+# print("The area of the rectangle is: ", area)
+
+# print("This program will allow you to find the area of a rectangle")
+# print("===============================================================")
+# length = int(input("What is the length of the rectangle:"))
+# width = int(input("What is the width of the rectangle:"))
+# print()
+# print("The area of the rectangle is: ", width*length)
+# print()
+
+
+# input string
+# my_name = input('Enter your name: ')
+# print('Your name is', my_name)
+
+# Add two numbers together
+# number1 = float(input("What is the first Number: "))
+# number2 = float(input("What is the second Number:"))
+# print('The addition of those two numbers is:',number1+number2)
+
