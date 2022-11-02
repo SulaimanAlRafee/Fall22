@@ -1,0 +1,64 @@
+#Did you pass the class? with bonus
+hw_grade = float(input("What is your grade for HW? "))
+midterm_grade = float(input("What is your grade for Midterm? "))
+final_grade = float(input("What is your grade for Final? "))
+absense = int(input("How many absenses do you have? "))
+bonus =0
+if absense <= 5:
+  bonus = 2.5
+
+total_grade = hw_grade + midterm_grade + final_grade + bonus
+
+if total_grade >= 60:
+  print("You passed the class")
+if total_grade < 60:
+  print("You failed the class")
+
+#Can you get a driving license
+# year_of_birth = int(input("What year you were born? "))
+
+# age = 2022 - year_of_birth
+
+# if age >= 18:
+#   print("You can apply to get a DL")
+# if age < 18:
+#   print("You cannot apply to get a DL")
+
+  
+#Did you pass the class?
+# hw_grade = float(input("What is your grade for HW?"))
+# midterm_grade = float(input("What is your grade for Midterm?"))
+# final_grade = float(input("What is your grade for Final?"))
+
+# total_grade = hw_grade + midterm_grade + final_grade
+
+# if total_grade >= 60:
+#   print("You passed the class")
+# if total_grade < 60:
+#   print("You failed the class")
+
+# Which number is larger - efficient
+# number1 = int(input("Please enter 1st num:"))
+# number2 =  int(input("Please enter 2nd num:"))
+
+# if number1 > number2:
+#   print("1st number is greater than 2nd number")
+# if number2 > number1:
+#   print("2nd number is greater than 1st number")
+# if number1 == number2:
+#   print("The numbers are equal")
+  
+# print("Thank you for using the calculator")
+
+# Which number is larger - Inefficient
+# number1 = int(input("Please enter 1st num:"))
+# number2 =  int(input("Please enter 2nd num:"))
+# if number1 > number2:
+#   print("1st number is greater than 2nd number")
+#   print("Thank you for using the calculator")
+# if number2 > number1:
+#   print("2nd number is greater than 1st number")
+#   print("Thank you for using the calculator")
+# if number1 == number2:
+#   print("The numbers are equal")
+#   print("Thank you for using the calculator")
