@@ -1,0 +1,79 @@
+#find out BMI results
+height = float(input("What is your height: "))
+weight = int(input("What is your weight: "))
+
+bmi = weight / (height * height)
+
+print("Your BMI is: ", bmi)
+
+if bmi > 25:
+  print("You are over weight")
+if bmi >= 15 and bmi <= 25:
+  print("You have a normal weight")
+if bmi < 15:
+  print("You are under weight")
+
+# print out your letter grade
+# hw_grade = float(input("What is your grade for HW? "))
+# midterm_grade = float(input("What is your grade for Midterm? "))
+# final_grade = float(input("What is your grade for Final? "))
+# absense = int(input("How many absenses do you have? "))
+
+# if absense <= 5:
+#   bonus = 2.5
+# else:
+#   bonus = 0
+
+# total_grade = hw_grade + midterm_grade + final_grade + bonus
+# print("your total points are: ",total_grade)
+
+# if total_grade >= 90:
+#   print("Letter grade: A")
+# if total_grade >= 80 and total_grade < 90:
+#   print("Letter grade: B")
+# if total_grade >= 70 and total_grade < 80:
+#   print("Letter grade: C")
+# if total_grade >= 60 and total_grade < 70:
+#   print("Letter grade: D")
+# if total_grade < 60:
+#   print("Letter grade: F")
+
+#Did you pass the class? with bonus
+# hw_grade = float(input("What is your grade for HW? "))
+# midterm_grade = float(input("What is your grade for Midterm? "))
+# final_grade = float(input("What is your grade for Final? "))
+# absense = int(input("How many absenses do you have? "))
+
+# if absense <= 5:
+#   bonus = 2.5
+# else:
+#   bonus = 0
+
+# total_grade = hw_grade + midterm_grade + final_grade + bonus
+
+# if total_grade >= 60:
+#   print("your grade is: ",total_grade,", You passed the class")
+# else:
+#   print("your grade is: ",total_grade,", You failed the class")
+# check if the name is ahmed or not
+# name = input("What is your name: ")
+
+# if name == 'ahmed':
+#   print('Hi ahmed')
+#   print('How are you today')
+#   print(':)')
+# else:
+#   print("Hi there")
+#   print(':)')
+
+# print('Have a nice day')
+
+# #Can you get a driving license
+# year_of_birth = int(input("What year you were born? "))
+
+# age = 2022 - year_of_birth
+
+# if age >= 18:
+#   print("You can apply to get a DL")
+# else:
+#   print("You cannot apply to get a DL")
