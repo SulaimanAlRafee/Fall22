@@ -1,0 +1,23 @@
+#give me the list of numbers that are even from 1 to 20
+for even_number in range(2,21,2):
+  print("Even number = ",even_number)
+
+# #negative step
+# for i in range(100,94,-1):
+#   print("current i = ",i)
+
+# # step
+# for i in range(0,100,5):
+#   print("current i = ",i)
+
+# Repeat the code
+# for num in range(5):
+#   print("----")
+#   print("Repitition number: ",num)
+#   print("----")
+#   print("Welcome")
+#   age = int(input("How old are you? "))
+#   if age < 18:
+#     print("You are too young for DL")
+#   else:
+#     print("Ok for DL")
