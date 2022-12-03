@@ -1,0 +1,53 @@
+#searching through a list
+cars = ['Mercedes', 'bmw', 'toyota', 'porsche']
+ages = [32, 15, 54, 29, 24, 72]
+
+for i in range(5):
+  car_search = input("What car you want to search?")
+  if car_search in cars:
+    print("Found it...")
+  else:
+    print ("Sorry, not there")
+  print()
+
+#changing a list item
+print(cars)
+cars[1] = "Range rover"
+print()
+print(cars)
+
+
+#find position or index of an item
+position = cars.index("bmw")
+print("position = ", position)
+
+#removing an item from a list
+print(cars)
+cars.remove("bmw")
+print()
+print(cars)
+
+#insert an item into a list
+cars.insert(6,"Nissan")
+print()
+print(cars)
+
+#adding a car to the list
+for i in range(5):
+  new_car = input("Enter new car: ")
+  cars.append(new_car)
+
+#the length of a list
+print(cars)
+print()
+print("List length is:",len(cars))
+
+#going through a list
+print()
+print('At position 1, we have: ',cars[1])
+print()
+for counter in cars:
+  print("Item = ", counter)
+print()
+for counter in range(len(cars)):
+  print("At position ",counter," we have ",cars[counter])
