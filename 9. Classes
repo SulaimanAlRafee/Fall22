@@ -1,0 +1,123 @@
+class Bank_Customer:
+  def __init__(self, name, balance, civil_id):
+    self.name = name
+    self.balance = balance
+    self.civil_id = civil_id
+    self.status = "Active"
+
+  def print_all_info(self):
+    print()
+    print("Customer: ", self.name, ", Balance: ", self.balance, "Civil ID:", self.civil_id)
+    print()
+  
+  def print_customer_balance(self):
+    print()
+    print("Customer: ", self.name, ", Balance: ", self.balance)
+    print()
+
+  def withdraw(self, how_much):
+    if self.status == "Active":      
+      if self.balance < how_much:
+        print("Sorry, insufficient funds")
+      else:
+        self.balance = self.balance - how_much
+        print(how_much," has been withdrawn")
+    else:
+      print("Sorry, Account it NOT ACTIVE")
+
+  def deposit(self, how_much):
+    self.balance = self.balance + how_much
+    print(how_much," has been deposited")
+
+  def deactivate_account(self):
+    self.status = "Not Active"
+    print("Account has been deactivated")
+    print()
+
+  def activate_account(self):
+    self.status = "Active"
+    print("Account has been activated")
+    print() 
+
+    
+
+new_customer = Bank_Customer("Ahmed", 2500, 26478454)
+new_customer.print_customer_balance()
+new_customer.print_all_info()
+new_customer.withdraw(3000)
+new_customer.print_customer_balance()
+new_customer.deposit(740)
+new_customer.print_customer_balance()
+new_customer.deactivate_account()
+new_customer.withdraw(300)
+new_customer.activate_account()
+new_customer.withdraw(300)
+new_customer.print_customer_balance()
+
+# class Water_Bottle:
+#   def __init__(self, brand, size, country, price):
+#     self.brand = brand
+#     self.size = size
+#     self.country = country
+#     self.price = price
+
+#   def print(self):
+#     print()
+#     print("Water Bottle Information")
+#     print("-----------------")
+#     print("Brand = ", self.brand)
+#     print("Size = ", self.size)
+#     print("Country = ", self.country)
+#     print("Price = ", self.price, " KD")
+#     print("-----------------")
+#     print()
+
+#   def change_price(self, new_price):
+#     self.price = new_price
+#     print()
+#     print ("Price has been changed")
+#     print()
+  
+#   def change_country(self, new_country):
+#     self.country = new_country
+#     print()
+#     print ("Country has been changed")
+#     print()
+
+
+
+# new_water_bottle = Water_Bottle("Abraj",200,"Kuwait",.05)
+# new_water_bottle.print()
+# new_water_bottle.change_price(0.08)
+# new_water_bottle.change_country("Saudi Arabia")
+# new_water_bottle.print()
+# print()
+# another_bottle = Water_Bottle("Evian",330, "France", 0.4)
+# another_bottle.print()
+# another_bottle.change_price(.480)
+# another_bottle.print()
+
+
+# class Person:
+#   def __init__(self, name, age): #mothod
+#     self.name = name #attributes
+#     self.age = age #attributes
+
+#   def print(self):
+#     print("-----------")
+#     print("Student Information")
+#     print("-----------")
+#     print("Name = ", self.name, "age = ", self.age)
+#     print("-----------")
+#     print()
+
+#   def year_of_birth(self):
+#     print("Year of Birth for ",self.name, "is: ", 2022 - self.age)
+    
+# student = Person('Ahmed',19)
+# student1 = Person('Muneera',18)
+
+# student.print()
+# student.year_of_birth()
+# student1.print()
+# student1.year_of_birth()
